@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let firstName = "Alexx";
+      let surName = "Motta";
+      let age = 20;
+
+      const person = {
+        firstName: firstName,
+        surName: surName,
+        age: age,
+
+        exemple: function (age) {
+          console.log(`Ele tem ${age} anos.`);
+        },
+      };
+
+      const personS6 = {
+        firstName,
+        surName,
+        age,
+
+        exemple(firstName) {
+          console.log(`Boa Tarde ${firstName}.`);
+        },
+      };
+
+      console.log(person);
+      console.log(personS6);
+
+      //person e person6 tem as mesmas propriedades
+
+      console.log(person.exemple(22));
+      console.log(personS6.exemple("Alex"));
+
+      //Shorthand
+      //a function pode ser criada normalmente sem o uso do nome function()
+    </script>
+  </body>
+</html>
